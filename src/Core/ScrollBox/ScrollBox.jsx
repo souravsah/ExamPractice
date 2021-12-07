@@ -1,11 +1,20 @@
 import React from 'react'
-import { ScrollBoxcss } from './ScrollBox.style'
+import { Li, ScrollBoxcss } from './ScrollBox.style'
 
-const ScrollBox = ({quesnum,handlClick}) => {
+const ScrollBox = ({quesnum,handlClick,settogglefunc}) => {
     return (
-        <ScrollBoxcss>
+        <ScrollBoxcss 
+        >
+        <li style={
+            {
+                width: "26px",
+                marginRight:"5px"
+            }
+        }></li>
         {
-            new Array(quesnum).fill(0).map((item,idx)=><li onClick={handlClick}>{idx+1}</li>)
+            quesnum.map((item,idx)=><Li onClick={handlClick} visited={quesnum[idx].visited}
+                                                             attempted={quesnum[idx].attempted}
+            >{idx+1}</Li>)
         }
         </ScrollBoxcss>
     )

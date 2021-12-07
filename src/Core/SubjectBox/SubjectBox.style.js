@@ -28,6 +28,3 @@ margin: 10px;
  width: 100vw;
 }
 `
-export const SelectBox = styled.div`
-color:${({toggle})=>toggle?"green":"black"};
-`

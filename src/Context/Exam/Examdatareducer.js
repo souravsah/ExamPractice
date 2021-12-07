@@ -10,11 +10,24 @@ export default (state,action) =>{
                             ...action.payload.help,
                             optionselected:true,
         
-                        }},["clicked"]:true}
+                        }},["attempted"]:true}
                     }
                     else 
                     return item
                 })}}
+            }
+        case "SET_VISITED":
+            return{
+        ...state,["physics"]:{...state.physics,["chapter1"]:{...state.physics.chapter1,["Questions"]:[...state.physics.chapter1.Questions].map((item,idx)=>{
+            if(action.payload===idx){
+                return {...item,["visited"]:true}
+            }
+            else{
+                return item
+            }
+        
+        })}}
+
             }
         default:
             return state;

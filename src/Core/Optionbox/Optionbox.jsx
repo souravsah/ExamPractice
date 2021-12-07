@@ -5,7 +5,7 @@ const Optionbox = ({option,idx}) => {
 
     let {physics,physicsquesnum,changeOptionselected}= useContext(Examdatastrore)
     const handleoption = (e) =>{
-        if(physics.chapter1.Questions[physicsquesnum].clicked){
+        if(physics.chapter1.Questions[physicsquesnum].attempted){
             return;
         }
         changeOptionselected({

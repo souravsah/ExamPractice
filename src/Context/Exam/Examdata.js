@@ -9,7 +9,9 @@ let initialdata={
         name:"Measurement",
         Questions:[
             {
-            clicked:false,    
+            visited:true,
+
+            attempted:false,    
             question:"A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
             option:{
                 option1:{
@@ -42,7 +44,8 @@ let initialdata={
             }
         },
         {
-            clicked:false,    
+            visited:false,
+            attempted:false,    
 
             question:"A at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
             option:{
@@ -75,7 +78,8 @@ let initialdata={
             }
         },
         {
-            clicked:false,    
+            visited:false,
+            attempted:false,    
 
             question:"When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
             option:{
@@ -109,6 +113,9 @@ let initialdata={
             }
         },
         {
+            visited:false,
+            attempted:false,    
+
             question:"What reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
             option:{
                 option1:{
@@ -141,6 +148,9 @@ let initialdata={
             }
         },
         {
+            visited:false,
+            attempted:false,    
+
             question:"CEO of Twitter : ",
             option:{
                 option1:{
@@ -194,6 +204,12 @@ dispatch({
     payload:obj
 })
 }
+const setVisitedstatus = (data) =>{
+    dispatch({
+        type:"SET_VISITED",
+        payload:data
+    })
+}
 return (
 <Examdatastrore.Provider
     value={
@@ -201,7 +217,8 @@ return (
             physics:state.physics,
             physicsquesnum:state.physicsquesnum,
             setphysicsquesnum,
-            changeOptionselected
+            changeOptionselected,
+            setVisitedstatus,
         }
     }
     >

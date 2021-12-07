@@ -1,10 +1,12 @@
 import React from 'react'
 import Optionbox from '../Optionbox/Optionbox'
 import { Optioncss } from '../Optionbox/Optionbox.style'
+import Prevnext from '../Prevnext/Prevnext'
 import { Questioncss } from './Question.style'
 
 const Question = ({quesarray}) => {
     return (
+        <>
         <Questioncss>
         <div>
             <h4>
@@ -18,8 +20,10 @@ const Question = ({quesarray}) => {
         <Optionbox option={quesarray.option.option4} idx={4}/>
         
         </ul>
-            
         </Questioncss>
+        <Prevnext/>
+
+        </>
     )
 }
 

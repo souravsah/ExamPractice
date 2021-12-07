@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Optioncss = styled.li`
     border:1px solid green ;
+    cursor: pointer;
     list-style: none;
     padding: 15px 10px;
     margin: 5px 0;

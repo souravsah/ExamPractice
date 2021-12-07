@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { BsCircle } from 'react-icons/bs';
-import { SelectBox, SubjectBoxcss } from './SubjectBox.style';
+import {  SubjectBoxcss } from './SubjectBox.style';
 import { IoMdCheckmarkCircle} from 'react-icons/io';
 import logo from "../../Images/logo.png"
 const SubjectBox = ({Physics,handlePage}) => {
     let [toggle,setToggle]=useState(false);
     const handleToggle =()=>setToggle(!toggle);
     return (
-        <SubjectBoxcss>
+        <SubjectBoxcss onClick={handlePage}>
         <div>
         <img src={logo} alt="" />
             <div>
@@ -15,19 +15,6 @@ const SubjectBox = ({Physics,handlePage}) => {
                 <p>Chapter 17 | 315 Questions</p>
             </div>
         </div>
-        <SelectBox onClick={
-            ()=>{
-                handleToggle()
-                handlePage()
-            }
-
-        } toggle={toggle} >
-        {
-            toggle?<IoMdCheckmarkCircle/>:<BsCircle/>
-        }
-            
-            
-        </SelectBox>
             
         </SubjectBoxcss>
     )
