@@ -108,40 +108,6 @@ let initialdata={
 
             }
         },
-
-        {
-            question:"parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
-            option:{
-                option1:{
-                    optiontext:"BAC",
-                    optionselected:false,
-                    correctans:false,
-                    correctans:"DEF",
-                }
-            },
-            option2:{
-                optiontext:"DEF",
-                optionselected:false,
-                correctanscheck:true,
-                correctans:"DEF",
-            },
-            option3:{
-                optiontext:"KEF",
-                optionselected:false,
-                correctanscheck:false,
-                correctans:"DEF",
-
-            },
-            option4:{
-                optiontext:"None of the above",
-                optionselected:false,
-                correctanscheck:false,
-                correctans:"DEF",
-
-            },
-
-        }
-        ,
         {
             question:"What reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
             option:{
