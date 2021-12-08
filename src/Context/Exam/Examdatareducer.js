@@ -6,7 +6,7 @@ export default (state,action) =>{
             return{
                 ...state,["physics"]:{...state.physics,["chapter1"]:{...state.physics.chapter1,["Questions"]:[...state.physics.chapter1.Questions].map((item,idx)=>{
                     if(idx===action.payload.arrayindex){
-                        return {...item,["option"]:{...item.option,[action.payload.optionnumber]:{
+                        return {...item,["correct"]:action.payload.help.correctanscheck,["option"]:{...item.option,[action.payload.optionnumber]:{
                             ...action.payload.help,
                             optionselected:true,
         

@@ -9,8 +9,8 @@ let initialdata={
         name:"Measurement",
         Questions:[
             {
+            correct:false,
             visited:true,
-
             attempted:false,    
             question:"A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
             option:{
@@ -44,6 +44,7 @@ let initialdata={
             }
         },
         {
+            correct:false,
             visited:false,
             attempted:false,    
 
@@ -78,6 +79,7 @@ let initialdata={
             }
         },
         {
+            correct:false,
             visited:false,
             attempted:false,    
 
@@ -113,6 +115,7 @@ let initialdata={
             }
         },
         {
+            correct:false,
             visited:false,
             attempted:false,    
 
@@ -148,6 +151,7 @@ let initialdata={
             }
         },
         {
+            correct:false,
             visited:false,
             attempted:false,    
 

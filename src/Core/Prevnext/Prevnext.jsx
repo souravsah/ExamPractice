@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Prevnextcss } from './Prevnext.style'
 import { GrPrevious ,GrFormNext } from 'react-icons/gr';
+import { Examdatastrore } from '../../Context/Exam/Examdata';
 
 const Prevnext = () => {
+    let {setphysicsquesnum ,physicsquesnum,setVisitedstatus } = useContext(Examdatastrore)
+    console.log(physicsquesnum)
     return (
         <Prevnextcss>
         <div>
-            <span><GrPrevious size={20}/></span>
-            {/* <span>Previous</span> */}
+            <span onClick={()=>
+            {
+                setphysicsquesnum(physicsquesnum)
+                setVisitedstatus(physicsquesnum)
+
+            }}><GrPrevious size={20}/></span>
         </div>
         <div>
-            {/* <span>Next</span> */}
-            <span><GrFormNext size={35}/></span>
+            <span onClick={()=>{
+            setVisitedstatus(physicsquesnum +2) 
+            setphysicsquesnum(physicsquesnum+2)
+            }}><GrFormNext size={35}/></span>
 
         </div>
         </Prevnextcss>

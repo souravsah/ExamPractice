@@ -25,10 +25,15 @@ export const Li = styled.li`
     background-color: #282F47;
     margin: 5px 15px;
     border-radius: 50%;
-    border:  ${({visited,attempted})=>{
+    border:  ${({visited,attempted,correct})=>{
         if(visited){
             if(attempted){
+                if(correct){
                 return "3px dashed green"
+                }
+                else{
+                    return "3px dashed red"
+                }
             }
             else {
                 return "3px dashed grey"

@@ -3,8 +3,7 @@ import { Li, ScrollBoxcss } from './ScrollBox.style'
 
 const ScrollBox = ({quesnum,handlClick,settogglefunc}) => {
     return (
-        <ScrollBoxcss 
-        >
+        <ScrollBoxcss>
         <li style={
             {
                 width: "26px",
@@ -14,6 +13,7 @@ const ScrollBox = ({quesnum,handlClick,settogglefunc}) => {
         {
             quesnum.map((item,idx)=><Li onClick={handlClick} visited={quesnum[idx].visited}
                                                              attempted={quesnum[idx].attempted}
+                                                             correct={quesnum[idx].correct}
             >{idx+1}</Li>)
         }
         </ScrollBoxcss>
