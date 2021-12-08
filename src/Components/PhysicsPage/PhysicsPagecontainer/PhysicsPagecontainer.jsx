@@ -7,7 +7,7 @@ import { Physicscss } from './PhysicsPageContainer.style'
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
 const PhysicsPagecontainer = () => {
-let {physics,Chemistry,Maths} = useContext(Examdatastrore)
+let {physics,Chemistry,Maths,physicschaptername} = useContext(Examdatastrore)
 console.log(physics)
 console.log(Chemistry)
 console.log(Maths)
@@ -27,8 +27,8 @@ const togglefunc = () =>{
             </span>
         </div>
         <div>
-            <Physicsscrollbox quesnum={physics.chapter1.Questions}/>
-            <PhysicsQuescontainer quesarray={physics.chapter1.Questions}/>
+            <Physicsscrollbox quesnum={physics[physicschaptername].Questions}/>
+            <PhysicsQuescontainer quesarray={physics[physicschaptername].Questions}/>
         </div>
         </Physicscss>
     )

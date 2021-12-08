@@ -192,7 +192,7 @@ export  const    physics={
                 correct:false,
                 visited:true,
                 attempted:false,    
-                question:"A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
+                question:"How are u. At what height did he bail out?",
                 option:{
                     option1:{
                         optiontext:"ABC",

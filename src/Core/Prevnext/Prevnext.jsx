@@ -4,7 +4,7 @@ import { GrPrevious ,GrFormNext } from 'react-icons/gr';
 import { Examdatastrore } from '../../Context/Exam/Examdata';
 
 const Prevnext = () => {
-    let {setphysicsquesnum ,physicsquesnum,setVisitedstatus } = useContext(Examdatastrore)
+    let {setphysicsquesnum ,physicsquesnum,setVisitedstatus,physicschaptername } = useContext(Examdatastrore)
     console.log(physicsquesnum)
     return (
         <Prevnextcss>
@@ -12,13 +12,20 @@ const Prevnext = () => {
             <span onClick={()=>
             {
                 setphysicsquesnum(physicsquesnum)
-                setVisitedstatus(physicsquesnum)
+                setVisitedstatus({
+                    data:physicsquesnum,
+                    chaptername:physicschaptername,
+
+                })
 
             }}><GrPrevious size={20}/></span>
         </div>
         <div>
             <span onClick={()=>{
-            setVisitedstatus(physicsquesnum +2) 
+            setVisitedstatus({
+                data:physicsquesnum+1,
+                chaptername:physicschaptername,
+            }) 
             setphysicsquesnum(physicsquesnum+2)
             }}><GrFormNext size={35}/></span>
 

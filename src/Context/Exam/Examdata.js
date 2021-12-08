@@ -5,6 +5,7 @@ import { physics } from "../../Data/Physics/Physics";
 import { Chemistry } from "../../Data/Chemistry/Chemistry";
 let initialdata={
     physicsquesnum:0,
+    physicschaptername:"chapter2",
     physics:{...physics},
     Maths :{...maths},
     Chemistry:{...Chemistry}
@@ -32,6 +33,12 @@ const setVisitedstatus = (data) =>{
         payload:data
     })
 }
+const setchaptername = (data) =>{
+    dispatch({
+        type:"SET_CHAPTER_NAME",
+        payload:data,
+    })
+}
 return (
 <Examdatastrore.Provider
     value={
@@ -40,9 +47,11 @@ return (
             Chemistry:state.Chemistry,
             Maths:state.Maths,
             physicsquesnum:state.physicsquesnum,
+            physicschaptername:state.physicschaptername,
             setphysicsquesnum,
             changeOptionselected,
             setVisitedstatus,
+            setchaptername,
         }
     }
     >

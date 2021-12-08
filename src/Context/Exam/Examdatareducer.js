@@ -4,7 +4,7 @@ export default (state,action) =>{
             return {...state,["physicsquesnum"]:action.payload-1}
         case "CHANGE_OPTION_SELECTED":
             return{
-                ...state,["physics"]:{...state.physics,["chapter1"]:{...state.physics.chapter1,["Questions"]:[...state.physics.chapter1.Questions].map((item,idx)=>{
+                ...state,["physics"]:{...state.physics,[action.payload.chaptername]:{...state.physics[action.payload.chaptername],["Questions"]:[...state.physics[action.payload.chaptername].Questions].map((item,idx)=>{
                     if(idx===action.payload.arrayindex){
                         return {...item,["correct"]:action.payload.help.correctanscheck,["option"]:{...item.option,[action.payload.optionnumber]:{
                             ...action.payload.help,
@@ -18,8 +18,8 @@ export default (state,action) =>{
             }
         case "SET_VISITED":
             return{
-        ...state,["physics"]:{...state.physics,["chapter1"]:{...state.physics.chapter1,["Questions"]:[...state.physics.chapter1.Questions].map((item,idx)=>{
-            if(action.payload===idx){
+        ...state,["physics"]:{...state.physics,[action.payload.chaptername]:{...state.physics[action.payload.chaptername],["Questions"]:[...state.physics[action.payload.chaptername].Questions].map((item,idx)=>{
+            if(action.payload.data===idx){
                 return {...item,["visited"]:true}
             }
             else{
@@ -29,6 +29,8 @@ export default (state,action) =>{
         })}}
 
             }
+     case "SET_CHAPTER_NAME":
+     return {...state,["physicschaptername"]:action.payload}
         default:
             return state;
     }
