@@ -1,9 +1,9 @@
 import React from 'react'
 import { Chapternamecss } from './Chaptername.style'
 
-const Chaptername = () => {
+const Chaptername = ({name}) => {
     return (
-        <Chapternamecss></Chapternamecss>
+        <Chapternamecss>{name}</Chapternamecss>
     )
 }
 

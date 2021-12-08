@@ -3,24 +3,13 @@ import Chaptername from '../Chaptername/Chaptername'
 import Searchbar from '../SearchBar/Searchbar'
 import { Ul } from './Chapter.style'
 
-const Chapters = () => {
+const Chapters = ({chaptername}) => {
+    console.log(Object.values(chaptername))
     return (
         <>
         <Searchbar/>
         <Ul>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-        <Chaptername/>
-
+        {Object.values(chaptername).map((item,idx)=><Chaptername name={item.name}/>)}
 
         </Ul>
         </>

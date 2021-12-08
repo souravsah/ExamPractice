@@ -1,196 +1,14 @@
 import React, { createContext, useReducer } from "react";
 import Examdatareducer from "./Examdatareducer"
-
-
+import {maths} from "../../Data/Maths/Maths"
+import { physics } from "../../Data/Physics/Physics";
+import { Chemistry } from "../../Data/Chemistry/Chemistry";
 let initialdata={
     physicsquesnum:0,
-    physics:{
-        chapter1:{
-        name:"Measurement",
-        Questions:[
-            {
-            correct:false,
-            visited:true,
-            attempted:false,    
-            question:"A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
-            option:{
-                option1:{
-                    optiontext:"ABC",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-                },
-                option2:{
-                    optiontext:"DEF",
-                    optionselected:false,
-                    correctanscheck:true,
-                    correctans:"DEF",
-                },
-                option3:{
-                    optiontext:"KEF",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
+    physics:{...physics},
+    Maths :{...maths},
+    Chemistry:{...Chemistry}
 
-                },
-                option4:{
-                    optiontext:"None of the above",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-               
-            }
-        },
-        {
-            correct:false,
-            visited:false,
-            attempted:false,    
-
-            question:"A at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
-            option:{
-                option1:{
-                    optiontext:"DEFa",
-                    optionselected:false,
-                    correctanscheck:true,
-                    correctans:"DEFa",
-                },
-                option2:{
-                    optiontext:"DEF",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEFa",
-                },
-                option3:{
-                    optiontext:"KEF",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEFa",
-
-                },
-                option4:{
-                    optiontext:"None of the above",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEFa",
-
-                },
-            }
-        },
-        {
-            correct:false,
-            visited:false,
-            attempted:false,    
-
-            question:"When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
-            option:{
-                option1:{
-                    optiontext:"CAB",
-                    optionselected:false,
-                    correctans:false,
-                    correctans:"DEF",
-                },
-                option2:{
-                    optiontext:"DEF",
-                    optionselected:false,
-                    correctanscheck:true,
-                    correctans:"DEF",
-                },
-                option3:{
-                    optiontext:"KEF",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-                option4:{
-                    optiontext:"None of the above",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-
-            }
-        },
-        {
-            correct:false,
-            visited:false,
-            attempted:false,    
-
-            question:"What reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
-            option:{
-                option1:{
-                    optiontext:"None of these",
-                    optionselected:false,
-                    correctans:false,
-                    correctans:"DEF",
-                },
-                option2:{
-                    optiontext:"DEF",
-                    optionselected:false,
-                    correctanscheck:true,
-                    correctans:"DEF",
-                },
-                option3:{
-                    optiontext:"KEF",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-                option4:{
-                    optiontext:"None of the above",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-
-            }
-        },
-        {
-            correct:false,
-            visited:false,
-            attempted:false,    
-
-            question:"CEO of Twitter : ",
-            option:{
-                option1:{
-                    optiontext:"None of these",
-                    optionselected:false,
-                    correctans:false,
-                    correctans:"DEF",
-                },
-                option2:{
-                    optiontext:"DEF",
-                    optionselected:false,
-                    correctanscheck:true,
-                    correctans:"DEF",
-                },
-                option3:{
-                    optiontext:"KEF",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-                option4:{
-                    optiontext:"None of the above",
-                    optionselected:false,
-                    correctanscheck:false,
-                    correctans:"DEF",
-
-                },
-
-            }
-        }
-
-
-
-    ]},
-   }
 }
 export const Examdatastrore = createContext(initialdata);
 
@@ -219,6 +37,8 @@ return (
     value={
         {
             physics:state.physics,
+            Chemistry:state.Chemistry,
+            Maths:state.Maths,
             physicsquesnum:state.physicsquesnum,
             setphysicsquesnum,
             changeOptionselected,

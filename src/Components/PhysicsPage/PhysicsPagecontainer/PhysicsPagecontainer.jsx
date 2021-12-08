@@ -7,8 +7,10 @@ import { Physicscss } from './PhysicsPageContainer.style'
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
 const PhysicsPagecontainer = () => {
-let {physics} = useContext(Examdatastrore)
+let {physics,Chemistry,Maths} = useContext(Examdatastrore)
 console.log(physics)
+console.log(Chemistry)
+console.log(Maths)
 let[toggle,settoggle]=useState(false);
 const togglefunc = () =>{
     settoggle(!toggle)
