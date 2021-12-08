@@ -9,7 +9,7 @@ const Chapters = ({chaptername}) => {
         <>
         <Searchbar/>
         <Ul>
-        {Object.values(chaptername).map((item,idx)=><Chaptername name={item.name} chapter={Object.keys(chaptername)[idx]}/>)}
+        {Object.values(chaptername).map((item,idx)=><Chaptername name={item.name} chapter={Object.keys(chaptername)[idx]} idx={idx} length={Object.keys(chaptername).length}/>)}
 
         </Ul>
         </>
