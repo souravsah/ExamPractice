@@ -8,7 +8,9 @@ let initialdata={
     physicschaptername:"chapter2",
     physics:{...physics},
     Maths :{...maths},
-    Chemistry:{...Chemistry}
+    Chemistry:{...Chemistry},
+    tempphysics:{...physics},
+
 
 }
 export const Examdatastrore = createContext(initialdata);
@@ -39,6 +41,18 @@ const setchaptername = (data) =>{
         payload:data,
     })
 }
+const setdatachemistry = (data) =>{
+    dispatch({
+        type:"CHEMISTRY",
+        payload:data
+    })
+}
+const setphysicsdata = (data) =>{
+    dispatch({
+        type:"PHYSICS",
+        payload:data,
+    })
+}
 return (
 <Examdatastrore.Provider
     value={
@@ -46,12 +60,15 @@ return (
             physics:state.physics,
             Chemistry:state.Chemistry,
             Maths:state.Maths,
+            tempphysics:state.tempphysics,
             physicsquesnum:state.physicsquesnum,
             physicschaptername:state.physicschaptername,
             setphysicsquesnum,
             changeOptionselected,
             setVisitedstatus,
             setchaptername,
+            setdatachemistry,
+            setphysicsdata,
         }
     }
     >

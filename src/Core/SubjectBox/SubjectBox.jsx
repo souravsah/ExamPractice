@@ -7,7 +7,9 @@ const SubjectBox = ({Physics,handlePage}) => {
     let [toggle,setToggle]=useState(false);
     const handleToggle =()=>setToggle(!toggle);
     return (
-        <SubjectBoxcss onClick={handlePage}>
+        <SubjectBoxcss onClick={()=>{
+            handlePage()
+        }}>
         <div>
         <img src={logo} alt="" />
             <div>

@@ -1,34 +1,34 @@
 export const Chemistry={
     chapter1:{
-    name:"Measurement",
+    name:"Chapter 1",
     Questions:[
         {
         correct:false,
         visited:true,
         attempted:false,    
-        question:"A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
+        question:"Nail polish remover is something that girls just can't do without. Which of the following has been used as the active ingredient in nail polish remover?",
         option:{
             option1:{
-                optiontext:"ABC",
+                optiontext:"acetone",
+                optionselected:false,
+                correctanscheck:true,
+                correctans:"acetone",
+            },
+            option2:{
+                optiontext:"methanol",
                 optionselected:false,
                 correctanscheck:false,
                 correctans:"DEF",
             },
-            option2:{
-                optiontext:"DEF",
-                optionselected:false,
-                correctanscheck:true,
-                correctans:"DEF",
-            },
             option3:{
-                optiontext:"KEF",
+                optiontext:"etanol",
                 optionselected:false,
                 correctanscheck:false,
                 correctans:"DEF",
 
             },
             option4:{
-                optiontext:"None of the above",
+                optiontext:"limone",
                 optionselected:false,
                 correctanscheck:false,
                 correctans:"DEF",
@@ -42,32 +42,33 @@ export const Chemistry={
         visited:false,
         attempted:false,    
 
-        question:"A at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
+        question:"Which of these isn't like the rest? (Note: Actually, you shouldn't taste chemicals!",
+
         option:{
             option1:{
-                optiontext:"DEFa",
+                optiontext:"Surcose",
                 optionselected:false,
-                correctanscheck:true,
-                correctans:"DEFa",
+                correctanscheck:false,
+                correctans:"Magnesium sulphate",
             },
             option2:{
-                optiontext:"DEF",
+                optiontext:"Lead(ii) acetate",
                 optionselected:false,
                 correctanscheck:false,
-                correctans:"DEFa",
+                correctans:"Magnesium sulphate",
             },
             option3:{
-                optiontext:"KEF",
+                optiontext:"Magnesium sulphate",
                 optionselected:false,
-                correctanscheck:false,
-                correctans:"DEFa",
+                correctanscheck:true,
+                correctans:"Magnesium sulphate",
 
             },
             option4:{
                 optiontext:"None of the above",
                 optionselected:false,
                 correctanscheck:false,
-                correctans:"DEFa",
+                correctans:"Magnesium sulphate",
 
             },
         }
@@ -77,32 +78,32 @@ export const Chemistry={
         visited:false,
         attempted:false,    
 
-        question:"When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
+        question:"During what century was the balance introduced for chemical processes?",
         option:{
             option1:{
-                optiontext:"CAB",
+                optiontext:"19th",
                 optionselected:false,
                 correctans:false,
-                correctans:"DEF",
+                correctans:"17th",
             },
             option2:{
-                optiontext:"DEF",
+                optiontext:"16th",
                 optionselected:false,
                 correctanscheck:true,
-                correctans:"DEF",
+                correctans:"17th",
             },
             option3:{
-                optiontext:"KEF",
+                optiontext:"17th",
                 optionselected:false,
-                correctanscheck:false,
-                correctans:"DEF",
+                correctanscheck:true,
+                correctans:"17th",
 
             },
             option4:{
-                optiontext:"None of the above",
+                optiontext:"18th",
                 optionselected:false,
                 correctanscheck:false,
-                correctans:"DEF",
+                correctans:"17th",
 
             },
 
@@ -113,7 +114,7 @@ export const Chemistry={
         visited:false,
         attempted:false,    
 
-        question:"What reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
+        question:"Neutralisation is the posh name that chemists give to the reaction between an acid and a(n) what?        ?",
         option:{
             option1:{
                 optiontext:"None of these",
@@ -185,7 +186,7 @@ export const Chemistry={
 
 ]},
         chapter2:{
-        name:"Measurement",
+        name:"Chapter 2",
         Questions:[
             {
             correct:false,
@@ -370,7 +371,7 @@ export const Chemistry={
 
     ]},
             chapter3:{
-            name:"Measurement",
+            name:"Chapter 3",
             Questions:[
                 {
                 correct:false,

@@ -31,7 +31,14 @@ export default (state,action) =>{
             }
      case "SET_CHAPTER_NAME":
      return {...state,["physicschaptername"]:action.payload}
-        default:
+     case "CHEMISTRY":
+    return {...state ,
+        ["physicsquesnum"]:0,
+    ["physicschaptername"]:"chapter2",
+    ["physics"]:{...action.payload},
+
+    }  
+     default:
             return state;
     }
 }
