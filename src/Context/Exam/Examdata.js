@@ -5,7 +5,7 @@ import { physics } from "../../Data/Physics/Physics";
 import { Chemistry } from "../../Data/Chemistry/Chemistry";
 let initialdata={
     physicsquesnum:0,
-    physicschaptername:"chapter2",
+    physicschaptername:"chapter1",
     physics:{...physics},
     Maths :{...maths},
     Chemistry:{...Chemistry},

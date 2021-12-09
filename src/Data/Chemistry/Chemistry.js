@@ -117,29 +117,29 @@ export const Chemistry={
         question:"Neutralisation is the posh name that chemists give to the reaction between an acid and a(n) what?        ?",
         option:{
             option1:{
-                optiontext:"None of these",
+                optiontext:"Gemini",
                 optionselected:false,
                 correctans:false,
-                correctans:"DEF",
+                correctans:"Alkali",
             },
             option2:{
-                optiontext:"DEF",
+                optiontext:"Alkali",
                 optionselected:false,
                 correctanscheck:true,
-                correctans:"DEF",
+                correctans:"Alkali",
             },
             option3:{
-                optiontext:"KEF",
+                optiontext:"Alibi",
                 optionselected:false,
                 correctanscheck:false,
-                correctans:"DEF",
+                correctans:"Alkali",
 
             },
             option4:{
-                optiontext:"None of the above",
+                optiontext:"Dratini",
                 optionselected:false,
                 correctanscheck:false,
-                correctans:"DEF",
+                correctans:"Alkali",
 
             },
 
@@ -150,29 +150,29 @@ export const Chemistry={
         visited:false,
         attempted:false,    
 
-        question:"CEO of Twitter : ",
+        question:"One of the most recognisable parts of chemistry is the very helpful periodic table. This table helps to group certain elements together. One way they do this is by putting things into periods, but what is the other classification?        ",
         option:{
             option1:{
-                optiontext:"None of these",
+                optiontext:"Congregations",
                 optionselected:false,
                 correctans:false,
-                correctans:"DEF",
+                correctans:"Groups",
             },
             option2:{
-                optiontext:"DEF",
+                optiontext:"Groups",
                 optionselected:false,
                 correctanscheck:true,
-                correctans:"DEF",
+                correctans:"Groups",
             },
             option3:{
-                optiontext:"KEF",
+                optiontext:"Forums",
                 optionselected:false,
                 correctanscheck:false,
-                correctans:"DEF",
+                correctans:"Groups",
 
             },
             option4:{
-                optiontext:"None of the above",
+                optiontext:"Factors",
                 optionselected:false,
                 correctanscheck:false,
                 correctans:"DEF",
